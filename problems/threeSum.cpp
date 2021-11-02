@@ -1,4 +1,4 @@
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 
 int main() {
@@ -16,6 +16,33 @@ int main() {
         }  
     }
     cout<<found<<endl; */
+
+    // Using two pointer algorithm
+    int n; cin>>n;
+    int target; cin>>target;
+
+    vector<int> vec(n);
+    for(auto &i : vec) 
+        cin>>i;
+
+    bool found = false;
+    sort(vec.begin(), vec.end());
+
+    for(int i = 0; i<n; i++){
+        int l = i+1; int h = n-1;
+        while(l<h){
+            int curr = vec[i] + vec[l] + vec[h];
+            if(curr==target)
+                found = true;
+            if(curr<target)
+                l++;
+            else h--;
+        }
+    }
     
+    if(found)
+        cout<<"True";
+    else cout<<"False";
+
     return 0;
 }
