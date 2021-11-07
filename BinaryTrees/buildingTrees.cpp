@@ -87,10 +87,11 @@ int main() {
     inOrderPrint(root);
 
     cout<<endl;
-
+    
     //Building tree postorder-inorder
-    Node* root2 = buildTree2(postorder, inorder, 0, 4);
+    Node* root = buildTree2(postorder, inorder, 0, 4);
     inOrderPrint(root);
+
     
     return 0;
 }
