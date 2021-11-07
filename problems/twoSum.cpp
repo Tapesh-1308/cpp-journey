@@ -4,6 +4,7 @@ using namespace std;
 vector<int> twoSum(vector<int> &nums, int target)
 {
     int n = nums.size();
+    vector<int> temp = nums;
     sort(nums.begin(), nums.end());
     int i = 0;
     int j = n - 1;
@@ -18,13 +19,30 @@ vector<int> twoSum(vector<int> &nums, int target)
             break;
     }
 
+        for (int k = n-1; k != i; k--)
+        {
+            if (temp[k] == nums[j])
+            {
+                j = k;
+                break;
+            } 
+        }
+        for (int k = 0; k < n; k++)
+        {
+            if (temp[k] == nums[i])
+            {
+                i = k;
+                break;
+            } 
+        }
+
     cout << i << " " << j << endl;
     return {i, j};
 }
 
 int main()
 {
-    vector<int> vec = {1, 2, 3, 4, 5};
-    twoSum(vec, 8);
+    vector<int> vec = {0,4,3,0};
+    twoSum(vec, 0);
     return 0;
 }
