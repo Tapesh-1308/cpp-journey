@@ -20,5 +20,5 @@ int main() {
     vector<int> ans = minimumCoin(v);
     for(auto it : ans) cout<<it<<" ";
 
-    return 0;
+    return 0; 
 }
