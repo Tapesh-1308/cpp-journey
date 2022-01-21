@@ -16,7 +16,10 @@ int main(){
         for(int j=0; j<c2; j++)
             cin>>B[i][j];
 
-    if(c1!=r2) cout<<"IMPOSSIBLE";
+    if(c1!=r2) {
+        cout<<"IMPOSSIBLE";
+        return;
+    }
 
     int mult[r1][c2];
 
