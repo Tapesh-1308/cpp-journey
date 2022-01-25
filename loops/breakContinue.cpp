@@ -1,4 +1,6 @@
 #include <iostream>
+#include <cmath>
+#include <vector>
 using namespace std;
 
 //Break and Continue
@@ -39,20 +41,17 @@ int main()
     // int n;
     // cout<<"Enter a number: ";
     // cin >> n;
-    // int i;
-    // for (i = 2; i < n; i++)
-    // {
-    //     if (n % i == 0)
-    //     {
-    //         cout << "This number is not Prime" << endl;
-    //         ;
+    // bool flag = 1;
+    // for (int i = 2; i <= sqrt(n); i++) {
+    //     if (n % i == 0) {
+    //         flag = 0;
     //         break;
     //     }
     // }
-    // if (i == n)
-    // {
-    //     cout << "This number is Prime";
-    // }
+    // if(flag) cout<<"This number is prime";
+    // else cout<<"This number is not prime";
+
+    
 
     // Write a program to print all prime numbers in a given range
 
@@ -74,5 +73,4 @@ int main()
         }
     }
 
-    return 0;
 }
