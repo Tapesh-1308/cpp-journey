@@ -17,14 +17,12 @@ int maxProfit(int price[], int n)
 	int max_price = price[n - 1];
 	for (int i = n - 2; i >= 0; i--) {
 		// max_price has maximum of price[i..n-1]
-		if (price[i] > max_price)
-			max_price = price[i];
+		max_price = max(price[i], max_price);
 
 		// we can get profit[i] by taking maximum of:
 		// a) previous maximum, i.e., profit[i+1]
 		// b) profit by buying at price[i] and selling at max_price
-		profit[i]
-			= max(profit[i + 1], max_price - price[i]);
+		profit[i] = max(profit[i + 1], max_price - price[i]);
 	}
 
 	/* Get the maximum profit with two transactions allowed
@@ -32,14 +30,12 @@ int maxProfit(int price[], int n)
 	int min_price = price[0];
 	for (int i = 1; i < n; i++) {
 		// min_price is minimum price in price[0..i]
-		if (price[i] < min_price)
-			min_price = price[i];
+		min_price = min(price[i], min_price);
 
 		// Maximum profit is maximum of:
 		// a) previous maximum, i.e., profit[i-1]
 		// b) (Buy, Sell) at (min_price, price[i]) and add profit of other trans. stored in profit[i]
-		profit[i] = max(profit[i - 1],
-						profit[i] + (price[i] - min_price));
+		profit[i] = max(profit[i - 1], profit[i] + (price[i] - min_price));
 	}
 	int result = profit[n - 1];
 
@@ -72,8 +68,8 @@ int main()
 	int n = sizeof(price) / sizeof(price[0]);
 	cout << "Maximum Profit = " << maxProfit(price, n);
 
-    Solution ob; 
-    vector<int> prices = { 2, 30, 15, 10, 8, 25, 80 };
-    cout<<ob.maxProfit(prices);
+    // Solution ob; 
+    // vector<int> prices = { 2, 30, 15, 10, 8, 25, 80 };
+    // cout<<ob.maxProfit(prices);
 	return 0;
 }
