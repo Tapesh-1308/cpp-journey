@@ -7,7 +7,7 @@ void printCommonElements(vector<vector<int>> &matrix) {
     for(int i=0; i<matrix[0].size(); i++) 
         um[matrix[0][i]] = 1;
     
-    for(int i=0; i<matrix.size(); i++) {
+    for(int i=1; i<matrix.size(); i++) {
         for(int j=0; j<matrix[0].size(); j++) {
             if(um[matrix[i][j]] == i) {
                 um[matrix[i][j]] = i+1;
