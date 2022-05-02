@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-// Method - 1 Brute force TC O(N^2) SC O(1)
+/* Method - 1 Brute force TC O(N^2) SC O(1)
 bool findPairDiff(int arr[], int n, int x){
     // To find 1t element of pair
     for(int i=0; i<n; i++) {
@@ -20,9 +20,9 @@ bool findPairDiff(int arr[], int n, int x){
     // If no pair found - Return false
     cout << "No Pair Found";
     return false;
-}
+} */
 
-// Method - 2 Binary Search TC O(2 * nlogn) SC O(1)
+/* Method - 2 Binary Search TC O(2 * nlogn) SC O(1)
 
 // Binary Search Algorithm
 int binarySearch(int arr[], int st, int end, int target) {
@@ -57,7 +57,7 @@ bool findPairDiff(int arr[], int n, int x){
     // else return false
     cout << "No Pair Found";
     return false;
-}
+} */
 
 // Method - 3 Two Pointer TC O(nlogn + n) SC O(1)
 bool findPairDiff(int arr[], int n, int x){

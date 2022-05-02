@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-// Method - 1 Brute Force - TC O(N^2) SC O(1)
+/* Method - 1 Brute Force - TC O(N^2) SC O(1)
 int majorityElement(int arr[], int n) {
     // maxCount -> stores count of majority element
     // count -> store count of ith element
@@ -26,9 +26,9 @@ int majorityElement(int arr[], int n) {
 
     // if maxCount is greater than n/2 return majority element else return -1
     return maxCount > n/2 ? arr[index] : -1;
-}
+} */
 
-// Method - 2 Bit Masking - TC O(NlogN) SC O(1)
+/* Method - 2 Bit Masking - TC O(NlogN) SC O(1)
 int majorityElement(int arr[], int n) {
     // Number of bits in the integer
     int len = sizeof(int) * 8;
@@ -63,9 +63,9 @@ int majorityElement(int arr[], int n) {
         return number;
     
     return -1;
-}
+} */
 
-// Method - 3 Hashmap - TC O(N) SC O(N)
+/* Method - 3 Hashmap - TC O(N) SC O(N)
 int majorityElement(int arr[], int n) {
     // To store frequency of each element in array
     unordered_map<int, int> um;
@@ -79,7 +79,7 @@ int majorityElement(int arr[], int n) {
         }
     }
     return -1;
-}
+} */
 
 // Method - 4 Moore's Voting Algorithm - TC O(N) SC O(1)
 int majorityElement(int arr[], int n) {

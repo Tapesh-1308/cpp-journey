@@ -3,7 +3,7 @@ using namespace std;
 
 #define ll long long int
 
-// Method - 1 Visted Array - TC O(N) SC o(N)
+/* Method - 1 Visted Array - TC O(N) SC o(N)
 void findMissingAndRepeating(int arr[], int n) {
     // To store output
     int repeating(0), missing(0);
@@ -30,9 +30,9 @@ void findMissingAndRepeating(int arr[], int n) {
     // Print ans
     cout <<"Repeating: " << repeating << endl
          <<"Missing: "<< missing << endl;
-}
+} */
 
-// Method - 2 Maths - TC O(N) SC O(1)
+/* Method - 2 Maths - TC O(N) SC O(1)
 void findMissingAndRepeating(int arr[], int n) {
     // sumArr - Stores sum of input array element
     // sumNum - Store sum of 1 to N numbers
@@ -74,10 +74,10 @@ void findMissingAndRepeating(int arr[], int n) {
     //Print ans
     cout <<"Repeating: " << repeating << endl
          <<"Missing: "<< missing << endl;
-}
+} */
 
 
-// Method - 3 Bit Manipulation - TC O(N) SC O(1)
+/* Method - 3 Bit Manipulation - TC O(N) SC O(1)
 void findMissingAndRepeating(int arr[], int n) {
     int repeating(0), missing(0);
 
@@ -133,7 +133,7 @@ void findMissingAndRepeating(int arr[], int n) {
 
     cout <<"Repeating: " << repeating << endl
          <<"Missing: "<< missing << endl;
-}
+} */
 
 // Method - 4 Swap Sort - TC O(N) SC O(1)
 void findMissingAndRepeating(int arr[], int n) {
