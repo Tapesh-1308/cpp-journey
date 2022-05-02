@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-// Method - 1 Simple Approach(If we are allowed to use / operator) TC O(N) SC O(1)
+/* Method - 1 Simple Approach(If we are allowed to use / operator) TC O(N) SC O(1)
 vector<int> productArray(vector<int> &nums) {
     int n = nums.size();
 
@@ -30,9 +30,9 @@ vector<int> productArray(vector<int> &nums) {
     }
     // return answer
     return ans;
-} 
+} */
 
-// Method - 2 Left Right Array TC O(3N)  SC O(2N)
+/* Method - 2 Left Right Array TC O(3N)  SC O(2N)
 vector<int> productArray(vector<int> &nums) {
     int n = nums.size();
 
@@ -55,7 +55,7 @@ vector<int> productArray(vector<int> &nums) {
 
     // Return answer -> product
     return product;
-} 
+} */
 
 // Method - 3 1 Array TC O(2N)  SC O(N)
 vector<int> productArray(vector<int> &nums) {
