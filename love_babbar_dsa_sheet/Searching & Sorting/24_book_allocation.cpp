@@ -33,18 +33,17 @@ bool isValid(int a[], int n, int mx, int m) {
 int findPages(int a[], int n, int m)  {
     // If number of students of more than the number of books
     if(m > n) return -1;
-
-    // sort array to apply binary search
-    sort(a, a+n);
     
     // Search space b/w maximum element in array - sum of all array
     // we can maximum gives all book one person i.e. sum of all array->end
-    int st = a[n-1];
+    int st = INT_MIN;
     int end = 0;
     
     // Calulating sum
-    for(int i=0; i<n; i++)
+    for(int i=0; i<n; i++) {
         end += a[i];
+        st = max(a[i], st);
+    }
         
     int mid, res=-1;
     while(st <= end) {
