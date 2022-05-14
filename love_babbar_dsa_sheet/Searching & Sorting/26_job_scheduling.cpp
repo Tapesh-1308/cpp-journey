@@ -13,7 +13,7 @@ bool jobComparator(Job s1, Job s2) {
 
 // Function find the index whose element is last compaitible with curr job that is job[i], if not found then returns -1
 
-/* Linear Search
+/* Linear Search (index = n)
 int latestNonConflict(Job arr[], int i) {
     // Search from 0...i-1 in left direction <-
 	for (int j=i-1; j>=0; j--)
@@ -25,7 +25,7 @@ int latestNonConflict(Job arr[], int i) {
 	return -1;
 } */
 
-// Binary Search
+// Binary Search (index = n-1)
 int latestNonConflict(Job jobs[], int index) {
     // Initialize 'lo' and 'hi' for Binary Search
     int lo = 0, hi = index - 1;
