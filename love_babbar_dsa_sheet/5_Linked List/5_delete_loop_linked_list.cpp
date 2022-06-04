@@ -1,4 +1,3 @@
-// C++ program to return first node of loop.
 #include <bits/stdc++.h>
 using namespace std;
 
