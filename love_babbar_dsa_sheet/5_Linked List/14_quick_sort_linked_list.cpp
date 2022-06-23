@@ -181,7 +181,7 @@ int main() {
 
     Node *sorted = quickSort(first);
 
-    cout << "Sorted Array: ";
+    cout << "Sorted List: ";
     printList(sorted);
     cout << endl;
 

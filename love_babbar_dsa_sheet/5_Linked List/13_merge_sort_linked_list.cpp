@@ -193,7 +193,7 @@ int main(){
 
     Node* sorted = mergeSort(first);
 
-    cout << "Sorted Array: ";
+    cout << "Sorted List: ";
     printList(sorted);
     cout << endl;
 

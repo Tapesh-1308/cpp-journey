@@ -120,28 +120,20 @@ Node* getIntersectionPoint(Node* head1, Node* head2)
 }
 
 int main() {
+    Node *head1 = NULL;
 
-    #include <bits/stdc++.h>
-using namespace std;
+    head1 = new Node(1);
+    head1->next = new Node(2);
+    head1->next->next = new Node(3);
+    head1->next->next->next = new Node(4);
+    head1->next->next->next->next = new Node(6);
 
-struct Node {
-	int data;
-	struct Node* next;
-    Node(int a) {
-        data = a;
-        next = NULL;
-    }
-};
+    Node *head2 = NULL;
 
+    head2 = new Node(2);
+    head2->next = new Node(4);
+    head2->next->next = head1->next->next;
 
-// A utility function to print a linked list
-void printList(Node* head) {
-	while (head != NULL) {
-		cout << head->data << " ";
-		head = head->next;
-	}
-	cout << endl;
-}
 
     Node* intersectionPoint = getIntersectionPoint(head1, head2);
 
