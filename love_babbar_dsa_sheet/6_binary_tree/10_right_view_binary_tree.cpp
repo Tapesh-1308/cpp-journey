@@ -38,7 +38,7 @@ void right_view(Node* root) {
 }
 
 // Approach - 2 Using queue DS - TC O(N) SC O(N)
-void leftView(Node* root) {
+void right_view(Node* root) {
     // return if the tree is empty
     if (root) {
         return;
