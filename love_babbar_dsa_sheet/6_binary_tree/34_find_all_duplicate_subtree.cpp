@@ -11,6 +11,8 @@ struct Node {
     }
 };
 
+// Approach - TC O(N) SC (N)
+
 string generateStrings(Node* root, unordered_map<string, int>& um, vector<Node*> &ans)
 {
     // Base Case 
