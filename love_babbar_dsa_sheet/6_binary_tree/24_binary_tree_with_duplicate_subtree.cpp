@@ -37,7 +37,7 @@ string solve(Node* root, unordered_map<string, int> &um) {
     return s; // return string for recursive calls
 }
 
-int duplicate_subtree(Node *root) {
+bool duplicate_subtree(Node *root) {
     // create a unordered map to store generated string with there frequency 
     unordered_map<string, int> um;
     
