@@ -11,7 +11,8 @@ struct Node {
     }
 };
 
-// Approach - TC O(N) SC (N)
+// Time Complexity: O(N^2)  Since string copying takes O(n) extra time.
+// Auxiliary Space: O(N^2) Since we are hashing a string for each node and length of this string can be of the order N.
 
 string generateStrings(Node* root, unordered_map<string, int>& um, vector<Node*> &ans)
 {
