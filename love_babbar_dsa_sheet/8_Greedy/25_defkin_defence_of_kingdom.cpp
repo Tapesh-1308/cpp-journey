@@ -6,7 +6,7 @@ using namespace std;
 
 
 // Time Complexity - O(2*NlogN)
-// Space Complexity - O(1)
+// Space Complexity - O(n)
 int main(){
     // t- number of testcases
     int t; cin>>t;
@@ -15,11 +15,11 @@ int main(){
         int w, h, n;
         cin>>w>>h>>n;
 
-        // vector of x-axis position and y-axis position of king
+        // store defended rows(y) and coloumn(x) position of tower
         vector<int> x;
         vector<int> y;
 
-        // starting of board
+        // starting edge of board
         x.push_back(0);
         y.push_back(0);
 
