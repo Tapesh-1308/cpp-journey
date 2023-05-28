@@ -40,7 +40,7 @@ class Solution {
             if(step==0) {
                 jump++;
                 if(i>=maxR) return -1;
-                step = maxR-1;
+                step = maxR-i;
             }
         }
     

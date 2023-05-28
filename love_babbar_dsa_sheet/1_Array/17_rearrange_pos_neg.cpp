@@ -20,6 +20,7 @@ void rearrange(int arr[], int n){
                 rightRotate(arr, wrongPos, i);
 
                 if(i-wrongPos >= 2) wrongPos += 2; // Diff between ith and wrong pos is >= 2 then next wrong pos will surely be on += 2
+                if(i-wrongPos >= 2) wrongPos += 2; // Diff between ith and wrong pos is >= 2 then next wrong pos will surely be on += 2
                 else wrongPos = -1;
             }
         }

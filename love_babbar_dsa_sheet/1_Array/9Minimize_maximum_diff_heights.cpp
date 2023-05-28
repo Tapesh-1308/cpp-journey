@@ -11,6 +11,10 @@ public:
         for(int i=1; i<n; i++){
             maxEle = max(arr[n-1]-k, arr[i-1]+k);
             minEle = min(arr[0]+k, arr[i]-k);
+
+            // If negative not allowed
+            if(minEle < 0) continue;
+            
             ans = min(ans, maxEle-minEle);
         }
         
@@ -30,7 +34,7 @@ int main() {
             cin >> arr[i];
         }
         Solution ob;
-        auto ans = ob.getMinDiff(arr, n, k);
+        int ans = ob.getMinDiff(arr, n, k);
         cout << ans << "\n";
     }
     return 0;

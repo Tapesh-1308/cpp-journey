@@ -30,8 +30,9 @@ struct twoStacks {
     // to push in stack2
     void pushStack2(int x) {
         // if stack2 is full
-        if(top2 == size-1)
-            return;
+        
+        
+        
 
         // increment top2 and add element in array
         arr[++top2] = x;
